@@ -1,0 +1,13 @@
+com.alocaly.chasseurMots
+com.ea.BejeweledBlitz_na
+com.ea.game.tetris2011_na
+com.rovio.angrybirds
+com.keeness.popmathlite
+com.zoodles.kidmode
+de.lotum.whatsinthefoto.us
+com.zengardenapps.aequalis
+com.busybeestudios.monstersgetsick
+com.CasualGameStore.CatVsMonkey
+com.CasualGameStore.PreAlgebra
+com.android.camera
+com.android.music
