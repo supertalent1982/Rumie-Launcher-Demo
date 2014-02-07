@@ -10,105 +10,97 @@ package com.jsdev.ruime;
 public final class R {
     public static final class attr {
     }
-
     public static final class dimen {
-        public static final int activity_horizontal_margin = 0x7f050000;
-        public static final int activity_vertical_margin = 0x7f050001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
-
     public static final class drawable {
-        public static final int admin_background = 0x7f020000;
-        public static final int background = 0x7f020001;
-        public static final int ic_demo_launcher = 0x7f020002;
-        public static final int ic_launcher = 0x7f020003;
-        public static final int keyicon = 0x7f020004;
+        public static final int admin_background=0x7f020000;
+        public static final int background=0x7f020001;
+        public static final int ic_demo_launcher=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int keyicon=0x7f020004;
     }
-
     public static final class id {
-        public static final int action_settings = 0x7f090019;
-        public static final int adminEdit = 0x7f090010;
-        public static final int adminGrid = 0x7f09000e;
-        public static final int adminOverlay = 0x7f09000f;
-        public static final int adminSubmit = 0x7f090011;
-        public static final int btn_try_demo = 0x7f090018;
-        public static final int codeButtonLayout = 0x7f090007;
-        public static final int codeClearButton = 0x7f090009;
-        public static final int codeDescText = 0x7f090003;
-        public static final int codeEditText = 0x7f090004;
-        public static final int codeGenerateButton = 0x7f090008;
-        public static final int codeList = 0x7f09000a;
-        public static final int codeValidEdit = 0x7f090006;
-        public static final int codeValidText = 0x7f090005;
-        public static final int dialogCancelButton = 0x7f090002;
-        public static final int dialogOkButton = 0x7f090001;
-        public static final int dialogPasswordEdit = 0x7f090000;
-        public static final int gridImage = 0x7f090012;
-        public static final int gridText = 0x7f090013;
-        public static final int itemCodeText = 0x7f090014;
-        public static final int itemValidText = 0x7f090015;
-        public static final int mainGrid = 0x7f090016;
-        public static final int mainProgress = 0x7f09000d;
-        public static final int tabPager = 0x7f09000b;
-        public static final int tabPagerStrip = 0x7f09000c;
-        public static final int video = 0x7f090017;
+        public static final int action_settings=0x7f090019;
+        public static final int adminEdit=0x7f090010;
+        public static final int adminGrid=0x7f09000e;
+        public static final int adminOverlay=0x7f09000f;
+        public static final int adminSubmit=0x7f090011;
+        public static final int btn_try_demo=0x7f090018;
+        public static final int codeButtonLayout=0x7f090007;
+        public static final int codeClearButton=0x7f090009;
+        public static final int codeDescText=0x7f090003;
+        public static final int codeEditText=0x7f090004;
+        public static final int codeGenerateButton=0x7f090008;
+        public static final int codeList=0x7f09000a;
+        public static final int codeValidEdit=0x7f090006;
+        public static final int codeValidText=0x7f090005;
+        public static final int dialogCancelButton=0x7f090002;
+        public static final int dialogOkButton=0x7f090001;
+        public static final int dialogPasswordEdit=0x7f090000;
+        public static final int gridImage=0x7f090012;
+        public static final int gridText=0x7f090013;
+        public static final int itemCodeText=0x7f090014;
+        public static final int itemValidText=0x7f090015;
+        public static final int mainGrid=0x7f090016;
+        public static final int mainProgress=0x7f09000d;
+        public static final int tabPager=0x7f09000b;
+        public static final int tabPagerStrip=0x7f09000c;
+        public static final int video=0x7f090017;
     }
-
     public static final class layout {
-        public static final int activity_dialog = 0x7f030000;
-        public static final int activity_generate = 0x7f030001;
-        public static final int activity_main = 0x7f030002;
-        public static final int grid_admin = 0x7f030003;
-        public static final int grid_item = 0x7f030004;
-        public static final int item_code = 0x7f030005;
-        public static final int item_grid = 0x7f030006;
-        public static final int player_layout = 0x7f030007;
+        public static final int activity_dialog=0x7f030000;
+        public static final int activity_generate=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int grid_admin=0x7f030003;
+        public static final int grid_item=0x7f030004;
+        public static final int item_code=0x7f030005;
+        public static final int item_grid=0x7f030006;
+        public static final int player_layout=0x7f030007;
     }
-
     public static final class menu {
-        public static final int main = 0x7f080000;
+        public static final int main=0x7f080000;
     }
-
     public static final class raw {
-        public static final int education = 0x7f040000;
-        public static final int play = 0x7f040001;
-        public static final int screencast = 0x7f040002;
-        public static final int video1 = 0x7f040003;
-        public static final int video2 = 0x7f040004;
-        public static final int video3 = 0x7f040005;
+        public static final int education=0x7f040000;
+        public static final int play=0x7f040001;
+        public static final int screencast=0x7f040002;
+        public static final int video1=0x7f040003;
+        public static final int video2=0x7f040004;
+        public static final int video3=0x7f040005;
     }
-
     public static final class string {
-        public static final int action_settings = 0x7f060000;
-        public static final int admin = 0x7f060001;
-        public static final int admin_cancel = 0x7f060002;
-        public static final int admin_enter = 0x7f060003;
-        public static final int admin_password = 0x7f060004;
-        public static final int app_name = 0x7f060005;
-        public static final int attention = 0x7f060006;
-        public static final int clear = 0x7f060007;
-        public static final int close = 0x7f060008;
-        public static final int close_video = 0x7f060009;
-        public static final int demo = 0x7f06000a;
-        public static final int enter_code = 0x7f060011;
-        public static final int generate = 0x7f06000b;
-        public static final int learn = 0x7f06000c;
-        public static final int number_code = 0x7f06000d;
-        public static final int play = 0x7f06000e;
-        public static final int try_demo = 0x7f06000f;
-        public static final int valid = 0x7f060010;
+        public static final int action_settings=0x7f060000;
+        public static final int admin=0x7f060001;
+        public static final int admin_cancel=0x7f060002;
+        public static final int admin_enter=0x7f060003;
+        public static final int admin_password=0x7f060004;
+        public static final int app_name=0x7f060005;
+        public static final int attention=0x7f060006;
+        public static final int clear=0x7f060007;
+        public static final int close=0x7f060008;
+        public static final int close_video=0x7f060009;
+        public static final int demo=0x7f06000a;
+        public static final int enter_code=0x7f060011;
+        public static final int generate=0x7f06000b;
+        public static final int learn=0x7f06000c;
+        public static final int number_code=0x7f06000d;
+        public static final int play=0x7f06000e;
+        public static final int try_demo=0x7f06000f;
+        public static final int valid=0x7f060010;
     }
-
     public static final class style {
-        /**
-         * Theme customizations available in newer API levels can go in
-         * res/values-vXX/styles.xml, while customizations related to
-         * backward-compatibility can go here.
-         * <p/>
-         * API 11 theme customizations can go here.
-         * API 14 theme customizations can go here.
+        /** 
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+ API 11 theme customizations can go here. 
+ API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme = 0x7f070000;
-        public static final int AppTheme = 0x7f070001;
-        public static final int Translucent = 0x7f070002;
+        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppTheme=0x7f070001;
+        public static final int Translucent=0x7f070002;
     }
 }
