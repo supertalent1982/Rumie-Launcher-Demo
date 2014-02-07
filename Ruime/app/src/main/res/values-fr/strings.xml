@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Rumie</string>
+    <string name="action_settings"></string>
     <string name="learn">Apprendre</string>
     <string name="play">Jouer</string>
     <string name="admin">Professeur</string>
