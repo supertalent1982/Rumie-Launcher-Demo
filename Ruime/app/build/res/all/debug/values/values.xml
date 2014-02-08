@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/D:/Rumie/Ruime/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/Rumie/Ruime/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings"></string>
+    <string name="admin">Admin</string>
+    <string name="admin_cancel">Cancel</string>
+    <string name="admin_enter">Enter</string>
+    <string name="admin_password">Admin Password:</string>
+    <string name="app_name">Rumie</string>
+    <string name="attention">You have run out of time. Enter another code to continue playing.</string>
+    <string name="clear">Clear</string>
+    <string name="close">Close</string>
+    <string name="close_video">Close Demo</string>
+    <string name="demo">Demo</string>
+    <string name="generate">Generate</string>
+    <string name="learn">Learn</string>
+    <string name="number_code">Number of codes to generate: </string>
+    <string name="play">Play</string>
+    <string name="try_demo">Try Demo</string>
+    <string name="valid">Valid for:</string>
+    <!-- From: file:/D:/Rumie/Ruime/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Translucent" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

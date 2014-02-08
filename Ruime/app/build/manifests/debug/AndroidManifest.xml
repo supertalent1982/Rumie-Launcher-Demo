@@ -1,0 +1,33 @@
+<!-- From: file:/D:/Rumie/Ruime/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.jsdev.ruime">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="orientation|keyboardHidden|screenSize" android:label="@string/app_name" android:name="com.jsdev.ruime.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:icon="@drawable/ic_demo_launcher" android:label="@string/demo" android:name="com.jsdev.ruime.PlayerActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/android:Theme.Holo.NoActionBar.Fullscreen"/>
+
+        <activity android:clearTaskOnLaunch="true" android:label="@string/app_name" android:name="com.jsdev.ruime.DialogActivity" android:theme="@style/Translucent"/>
+
+        <activity android:label="@string/app_name" android:name="com.jsdev.ruime.CodeGenerator"/>
+
+        <receiver android:name="com.jsdev.ruime.receiver.UnlockScreenReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.jsdev.ruime.services.GameAlarm" android:process=":remote"/>
+    </application>
+
+</manifest>

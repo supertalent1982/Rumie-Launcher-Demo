@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="D:\Rumie\Ruime\app\src\main\res" >
+            <file
+                name="admin_background"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable\admin_background.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_demo_launcher"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-hdpi\ic_demo_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="background"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-land-nodpi\background.png"
+                qualifiers="land-nodpi"
+                type="drawable" />
+            <file
+                name="ic_demo_launcher"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-mdpi\ic_demo_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="background"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-nodpi\background.png"
+                qualifiers="nodpi"
+                type="drawable" />
+            <file
+                name="keyicon"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-nodpi\keyicon.png"
+                qualifiers="nodpi"
+                type="drawable" />
+            <file
+                name="ic_demo_launcher"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-xhdpi\ic_demo_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="D:\Rumie\Ruime\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="activity_dialog"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\activity_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_generate"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\activity_generate.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_main"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="grid_admin"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\grid_admin.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="grid_item"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\grid_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_code"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\item_code.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_grid"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\item_grid.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="player_layout"
+                path="D:\Rumie\Ruime\app\src\main\res\layout\player_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="grid_admin"
+                path="D:\Rumie\Ruime\app\src\main\res\layout-land\grid_admin.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="item_grid"
+                path="D:\Rumie\Ruime\app\src\main\res\layout-land\item_grid.xml"
+                qualifiers="land"
+                type="layout" />
+            <file
+                name="main"
+                path="D:\Rumie\Ruime\app\src\main\res\menu\main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="education"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\education.txt"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="play"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\play.txt"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="screencast"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\screencast.3gp"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="video1"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\video1.3gp"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="video2"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\video2.3gp"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="video3"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\video3.3gp"
+                qualifiers=""
+                type="raw" />
+            <file
+                path="D:\Rumie\Ruime\app\src\main\res\values\dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="D:\Rumie\Ruime\app\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="action_settings" ></string>
+                <string name="try_demo" >Try Demo
+                </string>
+                <string name="attention" >You have run out of time. Enter another code to continue playing.
+                </string>
+                <string name="admin_enter" >Enter
+                </string>
+                <string name="learn" >Learn
+                </string>
+                <string name="play" >Play
+                </string>
+                <string name="demo" >Demo
+                </string>
+                <string name="admin_password" >Admin Password:
+                </string>
+                <string name="close" >Close
+                </string>
+                <string name="admin" >Admin
+                </string>
+                <string name="close_video" >Close Demo
+                </string>
+                <string name="app_name" >Rumie
+                </string>
+                <string name="generate" >Generate
+                </string>
+                <string name="number_code" >Number of codes to generate: 
+                </string>
+                <string name="valid" >Valid for:
+                </string>
+                <string name="admin_cancel" >Cancel
+                </string>
+                <string name="clear" >Clear
+                </string>
+            </file>
+            <file
+                path="D:\Rumie\Ruime\app\src\main\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="Translucent"
+                    parent="android:Theme.Translucent" >
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                </style>
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                </style>
+            </file>
+            <file
+                path="D:\Rumie\Ruime\app\src\main\res\values-fr\strings.xml"
+                qualifiers="fr" >
+                <string name="close" >Close
+                </string>
+                <string name="learn" >Apprendre
+                </string>
+                <string name="valid" >Chaque code reste valide pour
+                </string>
+                <string name="clear" >Supprimer
+                </string>
+                <string name="try_demo" >Try Demo
+                </string>
+                <string name="demo" >Démo
+                </string>
+                <string name="attention" >Attention! Vous n\'avez plus de temps. Pour continuer votre jeu, entrez un autre code.
+                </string>
+                <string name="play" >Jouer
+                </string>
+                <string name="admin_enter" >Entrez
+                </string>
+                <string name="close_video" >Close demo
+                </string>
+                <string name="enter_code" >Veuillez entrer votre code
+                </string>
+                <string name="generate" >Générer
+                </string>
+                <string name="admin_cancel" >Annuler
+                </string>
+                <string name="admin_password" >Mot de passe
+                </string>
+                <string name="admin" >Professeur
+                </string>
+                <string name="number_code" >Nombre de codes à générer
+                </string>
+            </file>
+            <file
+                path="D:\Rumie\Ruime\app\src\main\res\values-sw720dp-land\dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="D:\Rumie\Ruime\app\src\main\res\values-v11\styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="D:\Rumie\Ruime\app\src\main\res\values-v14\styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+        </source>
+        <source path="D:\Rumie\Ruime\app\build\res\rs\debug" />
+        <source path="D:\Rumie\Ruime\app\build\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="D:\Rumie\Ruime\app\src\debug\res" />
+    </dataSet>
+
+</merger>
