@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/D:/Rumie/Ruime/app/src/main/res/values-fr/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings"></string>
+    <string name="admin">Professeur</string>
+    <string name="admin_cancel">Annuler</string>
+    <string name="admin_enter">Entrez</string>
+    <string name="admin_password">Mot de passe</string>
+    <string name="app_name">Rumie</string>
+    <string name="attention">Attention! Vous n\'avez plus de temps. Pour continuer votre jeu, entrez un autre code.</string>
+    <string name="clear">Supprimer</string>
+    <string name="close">Close</string>
+    <string name="close_video">Close demo</string>
+    <string name="demo">Démo</string>
+    <string name="enter_code">Veuillez entrer votre code</string>
+    <string name="generate">Générer</string>
+    <string name="learn">Apprendre</string>
+    <string name="number_code">Nombre de codes à générer</string>
+    <string name="play">Jouer</string>
+    <string name="try_demo">Try Demo</string>
+    <string name="valid">Chaque code reste valide pour</string>
+
+</resources>

@@ -114,6 +114,21 @@
                 qualifiers=""
                 type="raw" />
             <file
+                name="lexscreencast"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\lexscreencast.3gp"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="newscreencast"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\newscreencast.3gp"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="oldvideo3"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\oldvideo3.3gp"
+                qualifiers=""
+                type="raw" />
+            <file
                 name="play"
                 path="D:\Rumie\Ruime\app\src\main\res\raw\play.txt"
                 qualifiers=""
@@ -238,9 +253,9 @@ true
                 </string>
                 <string name="close_video" >Close demo
                 </string>
-                <string name="enter_code" >Veuillez entrer votre code
-                </string>
                 <string name="generate" >Générer
+                </string>
+                <string name="enter_code" >Veuillez entrer votre code
                 </string>
                 <string name="admin_cancel" >Annuler
                 </string>
@@ -281,6 +296,11 @@ true
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
+            <file
+                name="workedlowresscreencast"
+                path="D:\Rumie\Ruime\app\src\main\res\raw\workedlowresscreencast.3gp"
+                qualifiers=""
+                type="raw" />
         </source>
         <source path="D:\Rumie\Ruime\app\build\res\rs\debug" />
         <source path="D:\Rumie\Ruime\app\build\res\generated\debug" />
