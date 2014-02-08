@@ -4,10 +4,12 @@
     <!-- From: file:/D:/Rumie/Ruime/app/src/main/res/values-fr/strings.xml -->
     <eat-comment />
 
+    <string name="action_settings"></string>
     <string name="admin">Professeur</string>
     <string name="admin_cancel">Annuler</string>
     <string name="admin_enter">Entrez</string>
     <string name="admin_password">Mot de passe</string>
+    <string name="app_name">Rumie</string>
     <string name="attention">Attention! Vous n\'avez plus de temps. Pour continuer votre jeu, entrez un autre code.</string>
     <string name="clear">Supprimer</string>
     <string name="close">Close</string>

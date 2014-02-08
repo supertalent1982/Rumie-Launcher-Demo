@@ -170,17 +170,17 @@
                 </string>
                 <string name="close_video" >Close Demo
                 </string>
-                <string name="app_name" >Rumie
-                </string>
                 <string name="generate" >Generate
+                </string>
+                <string name="app_name" >Rumie
                 </string>
                 <string name="number_code" >Number of codes to generate: 
                 </string>
                 <string name="valid" >Valid for:
                 </string>
-                <string name="admin_cancel" >Cancel
-                </string>
                 <string name="clear" >Clear
+                </string>
+                <string name="admin_cancel" >Cancel
                 </string>
             </file>
             <file
@@ -217,6 +217,7 @@ true
             <file
                 path="D:\Rumie\Ruime\app\src\main\res\values-fr\strings.xml"
                 qualifiers="fr" >
+                <string name="action_settings" ></string>
                 <string name="close" >Close
                 </string>
                 <string name="learn" >Apprendre
@@ -242,6 +243,8 @@ true
                 <string name="generate" >Générer
                 </string>
                 <string name="admin_cancel" >Annuler
+                </string>
+                <string name="app_name" >Rumie
                 </string>
                 <string name="admin_password" >Mot de passe
                 </string>
