@@ -173,20 +173,19 @@
                 </string>
                 <string name="admin" >Admin
                 </string>
-                <string name="close_video" >Rumie can help the world reach their retirement goals!
-Let\'s discuss in person. Get in touch at tariq@rumie.org or 647-824-9843
-                </string>
-                <string name="generate" >Generate
+                <string name="close_video" >Let\'s discuss in person.\nGet in touch at tariq@rumie.org or 647-824-9843
                 </string>
                 <string name="app_name" >Rumie
+                </string>
+                <string name="generate" >Generate
                 </string>
                 <string name="number_code" >Number of codes to generate: 
                 </string>
                 <string name="valid" >Valid for:
                 </string>
-                <string name="clear" >Clear
-                </string>
                 <string name="admin_cancel" >Cancel
+                </string>
+                <string name="clear" >Clear
                 </string>
             </file>
             <file
@@ -244,9 +243,9 @@ true
                 </string>
                 <string name="close_video" >Close demo
                 </string>
-                <string name="generate" >Générer
-                </string>
                 <string name="enter_code" >Veuillez entrer votre code
+                </string>
+                <string name="generate" >Générer
                 </string>
                 <string name="admin_cancel" >Annuler
                 </string>
