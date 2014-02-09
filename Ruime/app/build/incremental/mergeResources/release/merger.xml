@@ -168,19 +168,20 @@
                 </string>
                 <string name="admin" >Admin
                 </string>
-                <string name="close_video" >Close Demo
-                </string>
-                <string name="app_name" >Rumie
+                <string name="close_video" >Rumie can help the world reach their retirement goals!
+Let\'s discuss in person. Get in touch at tariq@rumie.org or 647-824-9843
                 </string>
                 <string name="generate" >Generate
+                </string>
+                <string name="app_name" >Rumie
                 </string>
                 <string name="number_code" >Number of codes to generate: 
                 </string>
                 <string name="valid" >Valid for:
                 </string>
-                <string name="admin_cancel" >Cancel
-                </string>
                 <string name="clear" >Clear
+                </string>
+                <string name="admin_cancel" >Cancel
                 </string>
             </file>
             <file
@@ -238,9 +239,9 @@ true
                 </string>
                 <string name="close_video" >Close demo
                 </string>
-                <string name="enter_code" >Veuillez entrer votre code
-                </string>
                 <string name="generate" >Générer
+                </string>
+                <string name="enter_code" >Veuillez entrer votre code
                 </string>
                 <string name="admin_cancel" >Annuler
                 </string>
@@ -282,18 +283,8 @@ true
                 </style>
             </file>
             <file
-                name="oldvideo3"
-                path="D:\Rumie\Ruime\app\src\main\res\raw\oldvideo3.3gp"
-                qualifiers=""
-                type="raw" />
-            <file
                 name="lexscreencast"
                 path="D:\Rumie\Ruime\app\src\main\res\raw\lexscreencast.3gp"
-                qualifiers=""
-                type="raw" />
-            <file
-                name="newscreencast"
-                path="D:\Rumie\Ruime\app\src\main\res\raw\newscreencast.3gp"
                 qualifiers=""
                 type="raw" />
             <file

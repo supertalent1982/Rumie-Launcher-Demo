@@ -119,16 +119,6 @@
                 qualifiers=""
                 type="raw" />
             <file
-                name="newscreencast"
-                path="D:\Rumie\Ruime\app\src\main\res\raw\newscreencast.3gp"
-                qualifiers=""
-                type="raw" />
-            <file
-                name="oldvideo3"
-                path="D:\Rumie\Ruime\app\src\main\res\raw\oldvideo3.3gp"
-                qualifiers=""
-                type="raw" />
-            <file
                 name="play"
                 path="D:\Rumie\Ruime\app\src\main\res\raw\play.txt"
                 qualifiers=""
@@ -183,7 +173,8 @@
                 </string>
                 <string name="admin" >Admin
                 </string>
-                <string name="close_video" >Close Demo
+                <string name="close_video" >Rumie can help the world reach their retirement goals!
+Let\'s discuss in person. Get in touch at tariq@rumie.org or 647-824-9843
                 </string>
                 <string name="generate" >Generate
                 </string>
