@@ -50,3 +50,4 @@ com.studyblue
 com.escapistgames.starchart
 com.pk.chemhelp
 com.artelplus.howtodraw
+org.kiwix.kiwixmobile

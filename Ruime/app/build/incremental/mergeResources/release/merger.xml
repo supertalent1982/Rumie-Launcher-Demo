@@ -281,16 +281,6 @@ true
                     <!-- API 14 theme customizations can go here. -->
                 </style>
             </file>
-            <file
-                name="lexscreencast"
-                path="D:\Rumie\Ruime\app\src\main\res\raw\lexscreencast.3gp"
-                qualifiers=""
-                type="raw" />
-            <file
-                name="workedlowresscreencast"
-                path="D:\Rumie\Ruime\app\src\main\res\raw\workedlowresscreencast.3gp"
-                qualifiers=""
-                type="raw" />
         </source>
         <source path="D:\Rumie\Ruime\app\build\res\rs\release" />
         <source path="D:\Rumie\Ruime\app\build\res\generated\release" />
