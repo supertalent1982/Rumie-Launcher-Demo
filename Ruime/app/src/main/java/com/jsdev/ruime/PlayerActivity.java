@@ -6,22 +6,22 @@ import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import java.io.File;
+
 /**
  * @author Aider Abdurafeev
  */
 public class PlayerActivity extends Activity {
 
-    private static final String PATH = "path";
     private static final String PACKAGE_PATH = "android.resource://com.jsdev.ruime/";
     private static final int[] videos = new int[]{R.raw.video1, R.raw.video2, R.raw.screencast, R.raw.video3};
-    public static final String INDEX_KEY = "index";
-    public static final String POSITION = "position";
     private int videoIndex = 0;
     private VideoView mVideoView;
     private Button tryDemoButton;
@@ -60,9 +60,7 @@ public class PlayerActivity extends Activity {
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(mVideoView);
 
-        final String videoName = String.valueOf(videos[videoIndex++]);
-
-        final Uri uri = Uri.parse(PACKAGE_PATH + videoName);
+        final Uri uri = getVideoUri();
         mVideoView.setMediaController(mediaController);
 
         mVideoView.setVideoURI(uri);
@@ -81,7 +79,7 @@ public class PlayerActivity extends Activity {
         mVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                if (videoIndex < videos.length && R.raw.screencast == videos[videoIndex]) {
+                if (videoIndex < videos.length && isScreenCastVideo()) {
                     tryDemoButton.setVisibility(View.VISIBLE);
                     mVideoView.setVisibility(View.INVISIBLE);
                 } else if (videoIndex < videos.length) {
@@ -113,9 +111,51 @@ public class PlayerActivity extends Activity {
 
     }
 
+    private boolean isScreenCastVideo() {
+        return R.raw.screencast == videos[videoIndex];
+    }
+
+    private Uri getVideoUri() {
+        File dir = new File(Environment.getExternalStorageDirectory(), getString(R.string.sdcard_folder_name));
+        final Uri uri;
+        if (dir.exists()) {
+            switch (videos[videoIndex]) {
+                case R.raw.screencast:
+                    uri = getVideoUri(dir, R.string.screencast);
+                    break;
+                case R.raw.video1:
+                    uri = getVideoUri(dir, R.string.video1);
+                    break;
+                case R.raw.video2:
+                    uri = getVideoUri(dir, R.string.video2);
+                    break;
+                case R.raw.video3:
+                    uri = getVideoUri(dir, R.string.video3);
+                    break;
+                default:
+                    uri = getVideoUri(dir, R.string.video1);
+            }
+        } else {
+            uri = Uri.parse(PACKAGE_PATH + videos[videoIndex]);
+        }
+        videoIndex++;
+        return uri;
+    }
+
+    private Uri getVideoUri(File dir, int resId) {
+        final Uri uri;
+        final File video = new File(dir.getAbsolutePath(), getString(resId));
+        if (video.exists()) {
+            uri = Uri.fromFile(video);
+        } else {
+            uri = Uri.parse(PACKAGE_PATH + videos[videoIndex]);
+        }
+        return uri;
+    }
+
     private void playNextVideo() {
         mVideoView.setVisibility(View.INVISIBLE);
-        mVideoView.setVideoURI(Uri.parse(PACKAGE_PATH + videos[videoIndex++]));
+        mVideoView.setVideoURI(getVideoUri());
         mVideoView.requestFocus();
         mVideoView.seekTo(0);
         mVideoView.start();
