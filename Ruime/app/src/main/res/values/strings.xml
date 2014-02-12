@@ -14,7 +14,13 @@
     <string name="clear">Clear</string>
     <string name="attention">You have run out of time. Enter another code to continue playing.</string>
     <string name="demo">Demo</string>
-    <string name="try_demo">Try Demo</string>
+    <string name="try_demo">Click to Play Demo</string>
     <string name="close">Close</string>
     <string name="close_video">Let\'s discuss in person.\nGet in touch at tariq@rumie.org or 647-824-9843</string>
+
+    <string name="sdcard_folder_name">rumiedemovideos</string>
+    <string name="video1">video1.3gp</string>
+    <string name="video2">video2.3gp</string>
+    <string name="video3">video3.3gp</string>
+    <string name="screencast">screencast.3gp</string>
 </resources>
