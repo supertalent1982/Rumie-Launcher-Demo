@@ -24,8 +24,13 @@
     <string name="learn">Learn</string>
     <string name="number_code">Number of codes to generate: </string>
     <string name="play">Play</string>
-    <string name="try_demo">Try Demo</string>
+    <string name="screencast">screencast.3gp</string>
+    <string name="sdcard_folder_name">rumiedemovideos</string>
+    <string name="try_demo">Click to Play Demo</string>
     <string name="valid">Valid for:</string>
+    <string name="video1">video1.3gp</string>
+    <string name="video2">video2.3gp</string>
+    <string name="video3">video3.3gp</string>
     <!-- From: file:/D:/Rumie/Ruime/app/src/main/res/values/styles.xml -->
     <eat-comment />
 

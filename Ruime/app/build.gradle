@@ -1,14 +1,21 @@
 apply plugin: 'android'
 
 android {
-    compileSdkVersion 17
+    compileSdkVersion 15
     buildToolsVersion "19.0.1"
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 17
+        targetSdkVersion 15
     }
 
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+	
     buildTypes {
         release {
             runProguard false

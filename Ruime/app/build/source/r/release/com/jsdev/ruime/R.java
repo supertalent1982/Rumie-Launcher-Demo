@@ -82,13 +82,18 @@ public final class R {
         public static final int close=0x7f060008;
         public static final int close_video=0x7f060009;
         public static final int demo=0x7f06000a;
-        public static final int enter_code=0x7f060011;
+        public static final int enter_code=0x7f060016;
         public static final int generate=0x7f06000b;
         public static final int learn=0x7f06000c;
         public static final int number_code=0x7f06000d;
         public static final int play=0x7f06000e;
-        public static final int try_demo=0x7f06000f;
-        public static final int valid=0x7f060010;
+        public static final int screencast=0x7f06000f;
+        public static final int sdcard_folder_name=0x7f060010;
+        public static final int try_demo=0x7f060011;
+        public static final int valid=0x7f060012;
+        public static final int video1=0x7f060013;
+        public static final int video2=0x7f060014;
+        public static final int video3=0x7f060015;
     }
     public static final class style {
         /** 

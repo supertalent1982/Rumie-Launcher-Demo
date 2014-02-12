@@ -149,8 +149,14 @@
             <file
                 path="D:\Rumie\Ruime\app\src\main\res\values\strings.xml"
                 qualifiers="" >
+                <string name="video3" >video3.3gp
+                </string>
+                <string name="video1" >video1.3gp
+                </string>
                 <string name="action_settings" ></string>
-                <string name="try_demo" >Try Demo
+                <string name="video2" >video2.3gp
+                </string>
+                <string name="try_demo" >Click to Play Demo
                 </string>
                 <string name="attention" >You have run out of time. Enter another code to continue playing.
                 </string>
@@ -176,7 +182,11 @@
                 </string>
                 <string name="number_code" >Number of codes to generate: 
                 </string>
+                <string name="screencast" >screencast.3gp
+                </string>
                 <string name="valid" >Valid for:
+                </string>
+                <string name="sdcard_folder_name" >rumiedemovideos
                 </string>
                 <string name="admin_cancel" >Cancel
                 </string>
