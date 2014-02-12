@@ -13,6 +13,7 @@ import java.util.List;
 
 public class CodeAdapter extends BaseAdapter {
 
+    private static final String VALID_FOR = "Valid for: ";
     private Context context;
     private List<Code> codeList;
 
@@ -50,7 +51,7 @@ public class CodeAdapter extends BaseAdapter {
         Code code = codeList.get(position);
 
         codeText.setText(code.validCode);
-        validText.setText("Valid for: " + String.valueOf(code.validDuration));
+        validText.setText(VALID_FOR + String.valueOf(code.validDuration));
 
         return view;
     }

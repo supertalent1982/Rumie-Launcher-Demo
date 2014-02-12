@@ -21,7 +21,8 @@ import java.io.File;
 public class PlayerActivity extends Activity {
 
     private static final String PACKAGE_PATH = "android.resource://com.jsdev.ruime/";
-    private static final int[] videos = new int[]{R.raw.video1, R.raw.video2, R.raw.screencast, R.raw.video3};
+    private static final int[] videos =     new int[]{R.raw.video1,    R.raw.video2, R.raw.screencast, R.raw.video3};
+    private static final int[] videoNames = new int[]{R.string.video1, R.string.video2, R.string.screencast, R.string.video3};
     private int videoIndex = 0;
     private VideoView mVideoView;
     private Button tryDemoButton;
@@ -31,13 +32,13 @@ public class PlayerActivity extends Activity {
     protected void onPause() {
         super.onPause();
         finishVideo();
+        finish();
     }
 
     private void finishVideo() {
         if (mVideoView != null) {
             mVideoView.suspend();
         }
-        finish();
     }
 
     @Override
@@ -45,6 +46,7 @@ public class PlayerActivity extends Activity {
         super.onBackPressed();
         finishVideo();
     }
+
 
 
     @Override
@@ -119,22 +121,7 @@ public class PlayerActivity extends Activity {
         File dir = new File(Environment.getExternalStorageDirectory(), getString(R.string.sdcard_folder_name));
         final Uri uri;
         if (dir.exists()) {
-            switch (videos[videoIndex]) {
-                case R.raw.screencast:
-                    uri = getVideoUri(dir, R.string.screencast);
-                    break;
-                case R.raw.video1:
-                    uri = getVideoUri(dir, R.string.video1);
-                    break;
-                case R.raw.video2:
-                    uri = getVideoUri(dir, R.string.video2);
-                    break;
-                case R.raw.video3:
-                    uri = getVideoUri(dir, R.string.video3);
-                    break;
-                default:
-                    uri = getVideoUri(dir, R.string.video1);
-            }
+            uri = getVideoUri(dir, videoNames[videoIndex]);
         } else {
             uri = Uri.parse(PACKAGE_PATH + videos[videoIndex]);
         }

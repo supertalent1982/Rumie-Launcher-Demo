@@ -1,6 +1,7 @@
 package com.jsdev.ruime;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +12,7 @@ import java.util.HashMap;
 public class ListHelper {
 
     public static final int LIST_EDUCATION = 1;
+    private static final String TAG = "ListHelper";
     public static final int LIST_GAMES = 2;
     public static final int LIST_ADMIN = 3;
 
@@ -24,26 +26,20 @@ public class ListHelper {
                 if (learnMap == null)
                     getLearnList(context);
 
-                if (learnMap.containsKey(pack))
-                    return true;
+                return learnMap.containsKey(pack);
 
-                return false;
             case LIST_GAMES:
                 if (gameMap == null)
                     getGameList(context);
 
-                if (gameMap.containsKey(pack))
-                    return true;
+                return gameMap.containsKey(pack);
 
-                return false;
             case LIST_ADMIN:
                 if (adminMap == null)
                     getAdminList();
 
-                if (adminMap.containsKey(pack))
-                    return true;
+                return adminMap.containsKey(pack);
 
-                return false;
         }
 
         return false;
@@ -87,7 +83,7 @@ public class ListHelper {
                 learnMap.put(line, true);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.e(TAG, e.getMessage(), e);
         }
     }
 }

@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,7 +20,7 @@ import com.jsdev.rumie.utility.PrefsHelper;
 import java.util.List;
 
 public class BasicGrid extends Fragment {
-
+    private static final String TAG = "BasicGrid";
     private GridAdapter gridAdapter;
 
     private static List<AppInfo> appList;
@@ -38,7 +39,7 @@ public class BasicGrid extends Fragment {
         if (appList == null) {
             appList = PrefsHelper.getPackages(getActivity());
         } else {
-            System.out.println("List size: " + appList.size());
+            Log.d(TAG, "List size: " + appList.size());
 
             GridView grid = (GridView) view.findViewById(R.id.mainGrid);
             gridAdapter = new GridAdapter(getActivity(), appList);

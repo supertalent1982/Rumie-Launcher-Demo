@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Applications {
-    private List<ResolveInfo> activityList;
+    private final List<ResolveInfo> activityList;
     private Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
     private PackageManager packMan = null;
     private Context context;
@@ -43,15 +43,13 @@ public class Applications {
         List<AppInfo> appList = new ArrayList<AppInfo>();
         List<PackageInfo> packs = packMan.getInstalledPackages(0);
 
-        for (int i = 0; i < packs.size(); i++) {
-            PackageInfo packInfo = packs.get(i);
-
+        for (PackageInfo packInfo : packs) {
             if ((!getSystemPackages) && (packInfo.versionName == null)) {
                 continue;
             }
 
-            AppInfo newInfo = new AppInfo(packInfo.applicationInfo.loadLabel(packMan).toString(), packInfo.packageName, packInfo.applicationInfo.loadIcon(packMan));
-            appList.add(newInfo);
+            AppInfo appInfo = new AppInfo(packInfo.applicationInfo.loadLabel(packMan).toString(), packInfo.packageName, null);
+            appList.add(appInfo);
         }
 
         if (activityList == null) {
@@ -60,17 +58,15 @@ public class Applications {
 
         String tempName = "";
 
-        for (int i = 0; i < appList.size(); ++i) {
-            tempName = appList.get(i).getPackageName();
+        for (AppInfo appInfo : appList) {
+            tempName = appInfo.getPackageName();
 
-            for (int j = 0; j < activityList.size(); ++j) {
-                if (tempName.equals(activityList.get(
-                        j).activityInfo.applicationInfo.packageName)) {
-                    appList.get(i).setClassName(activityList.get(j).activityInfo.name);
+            for (ResolveInfo resolveInfo : activityList) {
+                if (tempName.equals(resolveInfo.activityInfo.applicationInfo.packageName)) {
+                    appInfo.setClassName(resolveInfo.activityInfo.name);
                 }
             }
-
-            PrefsHelper.addPackage(context, appList.get(i));
         }
+        PrefsHelper.setPackages(context, appList);
     }
 }

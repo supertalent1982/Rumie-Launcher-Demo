@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,6 +28,9 @@ import java.util.List;
 
 public class AdminGrid extends Fragment {
 
+    private static final String TAG = "AdminGrid";
+    public static final String CODE_GENERATOR = "Code Generator";
+    public static final String PACKAGE_NAME = "com.jsdev.ruime.CodeGenerator";
     private GridAdapter gridAdapter;
 
     private List<AppInfo> appList;
@@ -38,9 +42,10 @@ public class AdminGrid extends Fragment {
     private boolean loggedIn = false;
 
     public static AdminGrid createFragment(List<AppInfo> apps, Drawable icon) {
-        AppInfo codeApp = new AppInfo("Code Generator", "com.jsdev.ruime.CodeGenerator", icon);
-        if (icon == null)
-            System.out.println("Icon is null");
+        AppInfo codeApp = new AppInfo(CODE_GENERATOR, PACKAGE_NAME, icon);
+        if (icon == null) {
+            Log.w(TAG,"Icon is NULL");
+        }
         apps.add(codeApp);
 
         AdminGrid fragment = new AdminGrid();
@@ -56,7 +61,7 @@ public class AdminGrid extends Fragment {
         if (appList == null) {
             appList = PrefsHelper.getPackages(getActivity());
         } else {
-            System.out.println("Admin size: " + appList.size());
+            Log.d(TAG, "List size: " + appList.size());
 
             GridView grid = (GridView) view.findViewById(R.id.adminGrid);
             gridAdapter = new GridAdapter(getActivity(), appList);

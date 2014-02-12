@@ -31,12 +31,10 @@ public class LauncherAdapter extends FragmentPagerAdapter {
         String demoLauncherName = context.getResources().getString(R.string.demo);
         demoVideoApp = new AppInfo(demoLauncherName, "com.jsdev.ruime", demoLauncherIcon);
         demoVideoApp.setClassName(PlayerActivity.class.getName());
-        System.out.println("Size: " + PrefsHelper.getPackages(context).size());
     }
 
     @Override
     public Fragment getItem(int position) {
-        System.out.println("Selecting Item");
         switch (position) {
             case 0:
                 return BasicGrid.createFragment(filterEducation());

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -20,6 +21,8 @@ import java.util.Map;
 
 public class MainActivity extends FragmentActivity {
 
+    private static final String TAG = "MainActivity";
+    public static final String TIME = "time";
     private ViewPager viewPager;
     private LauncherAdapter launcherAdapter;
 
@@ -99,10 +102,10 @@ public class MainActivity extends FragmentActivity {
 
             if (startTime != 0) {
                 Map<String, String> info = new HashMap<String, String>();
-                info.put("time", String.valueOf(((System.currentTimeMillis() - startTime) / 1000)));
+                info.put(TIME, String.valueOf(((System.currentTimeMillis() - startTime) / 1000)));
                 FlurryAgent.logEvent(pack, info);
 
-                System.out.println("Interval: " + String.valueOf(((System.currentTimeMillis() - startTime) / 1000)));
+//                System.out.println("Interval: " + String.valueOf(((System.currentTimeMillis() - startTime) / 1000)));
 
                 PrefsHelper.clearTime(this);
             }
@@ -114,7 +117,7 @@ public class MainActivity extends FragmentActivity {
             if (launcherAdapter == null) {
                 if (PrefsHelper.shouldReload(this))
                     pollApps();
-                else if (PrefsHelper.getPackages(this) == null || PrefsHelper.getPackages(this).size() < 1)
+                else if (PrefsHelper.getPackages(this).size() <= 0)
                     pollApps();
                 else {
                     launcherAdapter = new LauncherAdapter(getSupportFragmentManager(), this);
@@ -165,7 +168,7 @@ public class MainActivity extends FragmentActivity {
                         }
                     });
                 } catch (IllegalStateException e) {
-                    e.printStackTrace();
+                    Log.e(TAG,e.getMessage(),e);
                 }
             }
 
@@ -184,8 +187,7 @@ public class MainActivity extends FragmentActivity {
 
         @Override
         protected Applications doInBackground(Void... params) {
-            Applications applications = new Applications(mContext, mContext.getPackageManager());
-            return applications;
+            return new Applications(mContext, mContext.getPackageManager());
         }
 
         @Override

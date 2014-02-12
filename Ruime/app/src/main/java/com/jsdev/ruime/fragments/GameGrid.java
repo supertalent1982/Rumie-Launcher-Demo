@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,13 +32,15 @@ import java.util.List;
 
 public class GameGrid extends Fragment {
 
+    private static final String TAG = "GameGrid";
     private GridAdapter gridAdapter;
 
     private static List<AppInfo> appList;
 
     public static GameGrid createFragment(List<AppInfo> apps) {
-        if (apps == null)
-            System.out.println("Game App List is null");
+        if (apps == null) {
+            Log.w(TAG, "Game App List is null");
+        }
         GameGrid fragment = new GameGrid();
         fragment.setApps(apps);
 
@@ -51,8 +54,7 @@ public class GameGrid extends Fragment {
         if (appList == null) {
             appList = PrefsHelper.getPackages(getActivity());
         } else {
-            System.out.println("Game size: " + appList.size());
-
+            Log.d(TAG, "Game size: " + appList.size());
             GridView grid = (GridView) view.findViewById(R.id.mainGrid);
             gridAdapter = new GridAdapter(getActivity(), appList);
 
