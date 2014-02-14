@@ -19,4 +19,10 @@
     <string name="close">Close</string>
     <string name="close_video">Close demo</string>
 
+    <string name="sdcard_folder_name">rumiedemovideos</string>
+    <string name="video1">video1.3gp</string>
+    <string name="video2">video2.3gp</string>
+    <string name="video3">video3.3gp</string>
+    <string name="screencast">screencast.3gp</string>
+
 </resources>

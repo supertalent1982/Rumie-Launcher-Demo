@@ -8,6 +8,7 @@
     <string name="admin_password">Admin Password:</string>
     <string name="admin_enter">Enter</string>
     <string name="admin_cancel">Cancel</string>
+    <string name="enter_code">Enter code</string>
     <string name="valid">Valid for:</string>
     <string name="number_code">Number of codes to generate: </string>
     <string name="generate">Generate</string>
